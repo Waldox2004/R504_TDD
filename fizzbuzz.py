@@ -3,6 +3,8 @@ class fizzbuzz:
        pass
 
 
+   def affiche():
+       res = ""
        for i in range(1, 101):
            if i % 15 == 0:
                res += "FrisBee"
