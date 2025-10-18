@@ -1,5 +1,5 @@
-def crypt(message):
+def crypt(message, pas=1):
     res = ""
     for c in message:
-        res += chr(ord(c) + 1)
-    return res
+        res += chr(ord(c) + pas)
+    return res + str(pas)

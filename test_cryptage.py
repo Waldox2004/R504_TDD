@@ -7,5 +7,8 @@ def test_crypt_simple():
 def test_crypt_avec_pas():
     assert crypt("abc", 2) == "cde2"
 
+def test_decrypt():
+    assert decrypt("cde2") == "abc"
+
 if __name__ == '__main__':
     unittest.main()
