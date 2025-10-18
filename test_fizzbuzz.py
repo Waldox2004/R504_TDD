@@ -1,13 +1,16 @@
 import unittest
-from fizzbuzz import fizzbuzz
-
+from fizzbuzz import affiche
 
 class TestFizzBuzz(unittest.TestCase):
-   def setUp(self):
-       self.instance=fizzbuzz()
-   def test_affiche_sans_param(self):
-       self.assertEqual(self.instance.affiche(), "12fizz4buzzfizz")
+    def test_affiche_sans_param(self):
+        result = affiche()
+        self.assertIn("FrisBee", result)
+        self.assertTrue(result.startswith("12Fizz"))
+
+def test_affiche_avec_param(self):
+    result = affiche(15)
+    self.assertEqual(result, "12Fizz4BuzzFizz78FizzBuzz11Fizz1314FrisBee")
 
 
 if __name__ == '__main__':
-   unittest.main()
+    unittest.main()
