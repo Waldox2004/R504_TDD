@@ -1,5 +1,5 @@
 import unittest
-from cryptage import crypt
+from cryptage import crypt,decrypt
 
 def test_crypt_simple():
     assert crypt("abc") == "bcd"
