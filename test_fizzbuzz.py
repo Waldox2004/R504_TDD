@@ -10,6 +10,10 @@ class TestFizzBuzz(unittest.TestCase):
 def test_affiche_avec_param(self):
     result = affiche(15)
     self.assertEqual(result, "12Fizz4BuzzFizz78FizzBuzz11Fizz1314FrisBee")
+    
+def test_affiche_deux_param(self):
+    result = affiche(5, 10)
+    self.assertEqual(result, "BuzzFizz78FizzBuzz")
 
 
 if __name__ == '__main__':
